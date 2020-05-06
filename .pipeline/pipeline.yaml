@@ -109,9 +109,9 @@ spec:
             resource: app-image
             from:
               - containerize
-    - name: deploy-dev
+    - name: deploy-helm
       taskRef:
-        name: docker-check-task2
+        name: helm-deploy-task
       runAfter: [vulnerability-advisor]
       params:
         - name: repository
