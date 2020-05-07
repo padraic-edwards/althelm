@@ -75,7 +75,7 @@ spec:
         name: containerize-$(uid)
       spec:
         pipelineRef:
-          name: pipeline-container-registry
+          name: secure-helm-pipeline
         resources:
           - name: app-image
             resourceRef:
